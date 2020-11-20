@@ -110,6 +110,36 @@ $\lceil\frac{a}{b}\rceil \le \frac{a+(b-1)}{b}$
 
 $\lfloor\frac{a}{b}\rfloor \le \frac{a+(b-1)}{b}$
 
+#### 多项式
+
+若对某个常数$k$，有$f(n)=O(n^k)$，则称函数$f(n)$是**多项式有界**
+
+#### 指数
+
+对所有的$a\gt 1$的实常量$a$和$b$，有$\lim\limits_{n\to\infin}\frac{n^b}{a^a}=0$，据此可得 $n^b = o(a^n)$，当$x\to 0$时，$e^x = 1+x+\Theta(x^2)$
+
+#### 对数
+
+$ln(1+x)$简单展开 $ln(1+x) = x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots$，对于$x\gt -1$，有：
+
+$ln(\frac{x}{1+x})\le ln(1+x)\le x$，当且仅当$x=0$时等号成立。
+
+若对某个常数$k$，$f(n)=O(lg^kn)$，则称函数$f(n)$是**多对数有界**的
+
+根据$\lim\limits_{n\to\infin}\frac{n^b}{a^n}\stackrel{lgn替代n,2^a替代a}{\longrightarrow}\lim\limits_{n\to\infin}\frac{lg^bn}{(x^a)^{lgn}}=\lim\limits_{n\to\infin}\frac{lg^bn}{n^a}=0$
+
+得到：对于任意常量$a\gt 0$，$lg^bn=o(n^a)$
+
+#### 阶乘
+
+阶乘函数的弱上界是$n!\le n^n$，**斯特林近似公式**：$n!=\sqrt{2\pi n}(\frac{n}{e})^n(1+\Theta(\frac{1}{n}))$
+
+对于$n\ge 1$，$n!=\sqrt{2\pi n}(\frac{n}{e})^ne^{a_n}$，其中$\frac{1}{12n+1}\lt a_n\lt\frac{1}{12n}$
+
+
+
+
+
 
 
 
